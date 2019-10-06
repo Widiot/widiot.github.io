@@ -63,12 +63,12 @@ hashCode method, which states that equal objects must have equal hash codes.
 对于equals()的重写，可以参考String的做法
 ```java
 public boolean equals(Object anObject) {
-	// 若指向同一个内存地址，即为同一个String实例，返回true
+    // 若指向同一个内存地址，即为同一个String实例，返回true
     if (this == anObject) {
         return true;
     }
 
-	// 如果对象不是String实例，返回false
+    // 如果对象不是String实例，返回false
     if (anObject instanceof String) {
         String anotherString = (String)anObject;
         int n = value.length;
