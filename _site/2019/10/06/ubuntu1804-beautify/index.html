@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  
+  
+  <title>Ubuntu18.04美化</title>
+  <meta name="description" content="Ubuntu18.04使用GNOME取代了Unity，这里记录一下主题、终端、登陆、开机的美化过程">
+  
+
+  <link rel="stylesheet" href="/assets/main.css">
+  <link rel="canonical" href="http://localhost:4000/2019/10/06/ubuntu1804-beautify/">
+  
+  
+  <link rel="alternate" type="application/rss+xml" title="Widiot&#39;s Blog" href="http://localhost:4000/feed.xml">
+
+  
+
+  
+  <meta property="og:title" content="Ubuntu18.04美化">
+  <meta property="og:site_name" content="Widiot&#39;s Blog">
+  <meta property="og:url" content="http://localhost:4000/2019/10/06/ubuntu1804-beautify/">
+  <meta property="og:description" content="Ubuntu18.04使用GNOME取代了Unity，这里记录一下主题、终端、登陆、开机的美化过程">
+  
+  
+  <meta name="twitter:card" content="summary">
+  
+  <meta name="twitter:title" content="Ubuntu18.04美化">
+  <meta name="twitter:description" content="Ubuntu18.04使用GNOME取代了Unity，这里记录一下主题、终端、登陆、开机的美化过程">
+  
+  
+
+  <link rel="dns-prefetch" href="https://fonts.gstatic.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css?family=Bitter:400,400i,700&display=swap" rel="stylesheet">
+
+  
+
+</head>
+
+
+  <body>
+
+    <header class="site-header">
+
+  <div class="wrapper">
+
+    <a class="site-title" href="/">Widiot&#39;s Blog</a>
+
+    <nav class="site-nav">
+      
+        
+        <a class="page-link" href="/about/">About</a>
+      
+        
+        <a class="page-link" href="/archives/">Archives</a>
+      
+        
+        <a class="page-link" href="https://github.com/widiot/widiot.github.io">GitHub</a>
+      
+    </nav>
+
+  </div>
+
+</header>
+
+
+    <main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    
+      <h1 class="post-title" itemprop="name headline">Ubuntu18.04美化</h1>
+    
+    <p class="post-meta"><time datetime="2019-10-06T00:00:00+08:00" itemprop="datePublished">Oct 6, 2019</time> •
+  
+    
+    
+      
+    
+      
+    
+      
+    
+      
+        <a href="/categories/os/">OS</a>
+      
+    
+  
+
+
+ •
+  
+    
+    
+      
+    
+      
+        <a href="/tags/ubuntu/">Ubuntu</a>
+      
+    
+      
+    
+      
+    
+  
+
+</p>
+  </header>
+
+  <div class="post-content" itemprop="articleBody">
+    <p>Ubuntu18.04使用GNOME取代了Unity，这里记录一下主题、终端、登陆、开机的美化过程</p>
+
+<!-- more -->
+
+<h1 id="效果展示">效果展示</h1>
+
+<p>桌面
+<img src="https://img-blog.csdnimg.cn/20190331145006906.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1doaXRlX0lkaW90,size_16,color_FFFFFF,t_70" alt="桌面" /></p>
+
+<p>应用程序
+<img src="https://img-blog.csdnimg.cn/20190331145106482.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1doaXRlX0lkaW90,size_16,color_FFFFFF,t_70" alt="应用程序" /></p>
+
+<p>文件夹
+<img src="https://img-blog.csdnimg.cn/20190331145147903.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1doaXRlX0lkaW90,size_16,color_FFFFFF,t_70" alt="文件夹" /></p>
+
+<p>终端
+<img src="https://img-blog.csdnimg.cn/2019033114545896.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1doaXRlX0lkaW90,size_16,color_FFFFFF,t_70" alt="终端" /></p>
+
+<p>锁屏和登陆界面不方便截图，所以用的官方示例图
+<img src="https://img-blog.csdnimg.cn/20190331150125594.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1doaXRlX0lkaW90,size_16,color_FFFFFF,t_70" alt="锁屏" />
+<img src="https://img-blog.csdnimg.cn/20190331150133428.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1doaXRlX0lkaW90,size_16,color_FFFFFF,t_70" alt="登陆界面" /></p>
+
+<h1 id="安装gnome-tweaks">安装GNOME Tweaks</h1>
+
+<p>安装GNOME Tweaks主题美化工具</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo </span>apt-get <span class="nb">install </span>gnome-tweak-tool
+<span class="nb">sudo </span>apt-get <span class="nb">install </span>gnome-shell-extensions
+<span class="nb">sudo </span>apt-get <span class="nb">install  </span>gnome-shell-extension-dashtodock
+</code></pre></div></div>
+
+<p>打开tweak，选择扩展，打开User themes选项
+<img src="https://img-blog.csdnimg.cn/20190331155100564.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1doaXRlX0lkaW90,size_16,color_FFFFFF,t_70" alt="tweak" /></p>
+
+<p>然后选择外观，如果shell上有感叹号，关闭tweak，按Alt+F2，输入r，执行后重新打开tweak就没有感叹号了</p>
+
+<h1 id="配置主题和图标">配置主题和图标</h1>
+
+<p>下载<a href="https://www.gnome-look.org/s/Gnome/p/1013714/">macOS High Sierra</a>主题，选择Files下载其中一个主题以及图标。解压之后，把主题放到<code class="highlighter-rouge">/usr/share/themes/</code>下，图标放到<code class="highlighter-rouge">/usr/share/icons/</code>下。我选择的主题和图标如下
+<img src="https://img-blog.csdnimg.cn/20190331161201775.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1doaXRlX0lkaW90,size_16,color_FFFFFF,t_70" alt="下载主题和图标" /></p>
+
+<p>然后打开tweak，设置外观如下
+<img src="https://img-blog.csdnimg.cn/20190331161534859.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1doaXRlX0lkaW90,size_16,color_FFFFFF,t_70" alt="设置外观" /></p>
+
+<h1 id="设置dock">设置Dock</h1>
+
+<p>打开tweak，选择扩展，打开Dash to dock，然后点击设置
+<img src="https://img-blog.csdnimg.cn/20190331161935618.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1doaXRlX0lkaW90,size_16,color_FFFFFF,t_70" alt="打开Dash to dock" /></p>
+
+<p>这里可以按自己的喜好设置Dock
+<img src="https://img-blog.csdnimg.cn/20190331162146689.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1doaXRlX0lkaW90,size_16,color_FFFFFF,t_70" alt="设置Dock" />
+<img src="https://img-blog.csdnimg.cn/20190331162205229.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1doaXRlX0lkaW90,size_16,color_FFFFFF,t_70" alt="设置Dock" /></p>
+
+<h1 id="设置开机动画">设置开机动画</h1>
+
+<p>下载<a href="https://www.opendesktop.org/p/1154790/">Ubuntu Paw Plymouth</a>主题，解压缩放在/usr/share/plymouth/themes/下</p>
+
+<p>然后备份并编辑文件</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo cp</span> /etc/alternatives/default.plymouth /etc/alternatives/default.plymouth.bak
+<span class="nb">sudo </span>vim /etc/alternatives/default.plymouth
+</code></pre></div></div>
+
+<p>最后两行修改为新的主题路径</p>
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">[</span>Plymouth Theme]
+<span class="nv">Name</span><span class="o">=</span>Ubuntu Logo
+<span class="nv">Description</span><span class="o">=</span>A theme that features a blank background with a logo.
+<span class="nv">ModuleName</span><span class="o">=</span>script
+
+<span class="o">[</span>script]
+<span class="nv">ImageDir</span><span class="o">=</span>/usr/share/plymouth/themes/Ubuntu-Paw
+<span class="nv">ScriptFile</span><span class="o">=</span>/usr/share/plymouth/themes/Ubuntu-Paw/ubuntu-paw.script
+</code></pre></div></div>
+
+<h1 id="设置登陆界面">设置登陆界面</h1>
+
+<p>下载<a href="https://www.opendesktop.org/s/Gnome/p/1207015/">High Ubunterra </a>主题，选择Files下载其中一个主题（根据其产品描述，带CC后缀的只能用于Ubuntu 18.10，我开始没注意，下载了带CC后缀的，结果安装不了），我选择的如下
+<img src="https://img-blog.csdnimg.cn/20190331163728236.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1doaXRlX0lkaW90,size_16,color_FFFFFF,t_70" alt="下载登陆界面主题" /></p>
+
+<p>解压缩在终端运行</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo chmod</span> +x install.sh
+./install.sh
+</code></pre></div></div>
+
+<p>更换锁屏壁纸只需要选择一张图片右键，然后在脚本中选择SetAsWallpaper</p>
+
+<h1 id="设置终端">设置终端</h1>
+
+<p>Zsh是替代Bash的终端，还可以设置多种主题，在终端中安装</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo </span>apt-get <span class="nb">install </span>zsh
+</code></pre></div></div>
+
+<p>然后用Oh My Zsh美化Zsh终端</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sh <span class="nt">-c</span> <span class="s2">"</span><span class="si">$(</span>curl <span class="nt">-fsSL</span> https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh<span class="si">)</span><span class="s2">"</span>
+</code></pre></div></div>
+
+<p>最后用Zsh替换Bash</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>chsh <span class="nt">-s</span> <span class="sb">`</span>which zsh<span class="sb">`</span>
+</code></pre></div></div>
+
+<p>其他的更改可以直接右键终端，选择配置文件首选项进行设置
+<img src="https://img-blog.csdnimg.cn/20190331165313337.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1doaXRlX0lkaW90,size_16,color_FFFFFF,t_70" alt="终端设置" /></p>
+
+<h1 id="参考">参考</h1>
+<ul>
+  <li><a href="https://www.jianshu.com/p/6ef16e3b0a3e">Ubuntu18.04美化总结</a></li>
+  <li><a href="https://blog.csdn.net/lishanleilixin/article/details/80453565">Ubuntu18.04美化主题(mac主题)</a></li>
+</ul>
+
+  </div>
+
+  
+
+</article>
+
+      </div>
+    </main>
+
+    <footer class="site-footer">
+
+  <div class="wrapper">
+
+    <p>
+      
+
+&copy; Widiot - Powered by <a href="https://jekyllrb.com">Jekyll</a> &amp; <a href="https://github.com/yous/whiteglass">whiteglass</a> - Subscribe via <a href="http://localhost:4000/feed.xml">RSS</a>
+
+    </p>
+
+  </div>
+
+</footer>
+
+
+  </body>
+
+</html>

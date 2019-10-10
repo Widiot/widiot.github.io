@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  
+  
+  <title>静态导入import static</title>
+  <meta name="description" content="偶然看到import static，感觉很新奇，以前没用过，所以整理了一下关于静态导入的使用方式和注意事项">
+  
+
+  <link rel="stylesheet" href="/assets/main.css">
+  <link rel="canonical" href="http://localhost:4000/2019/10/06/import-static/">
+  
+  
+  <link rel="alternate" type="application/rss+xml" title="Widiot&#39;s Blog" href="http://localhost:4000/feed.xml">
+
+  
+
+  
+  <meta property="og:title" content="静态导入import static">
+  <meta property="og:site_name" content="Widiot&#39;s Blog">
+  <meta property="og:url" content="http://localhost:4000/2019/10/06/import-static/">
+  <meta property="og:description" content="偶然看到import static，感觉很新奇，以前没用过，所以整理了一下关于静态导入的使用方式和注意事项">
+  
+  
+  <meta name="twitter:card" content="summary">
+  
+  <meta name="twitter:title" content="静态导入import static">
+  <meta name="twitter:description" content="偶然看到import static，感觉很新奇，以前没用过，所以整理了一下关于静态导入的使用方式和注意事项">
+  
+  
+
+  <link rel="dns-prefetch" href="https://fonts.gstatic.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css?family=Bitter:400,400i,700&display=swap" rel="stylesheet">
+
+  
+
+</head>
+
+
+  <body>
+
+    <header class="site-header">
+
+  <div class="wrapper">
+
+    <a class="site-title" href="/">Widiot&#39;s Blog</a>
+
+    <nav class="site-nav">
+      
+        
+        <a class="page-link" href="/about/">About</a>
+      
+        
+        <a class="page-link" href="/archives/">Archives</a>
+      
+        
+        <a class="page-link" href="https://github.com/widiot/widiot.github.io">GitHub</a>
+      
+    </nav>
+
+  </div>
+
+</header>
+
+
+    <main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    
+      <h1 class="post-title" itemprop="name headline">静态导入import static</h1>
+    
+    <p class="post-meta"><time datetime="2019-10-06T00:00:00+08:00" itemprop="datePublished">Oct 6, 2019</time> •
+  
+    
+    
+      
+    
+      
+    
+      
+        <a href="/categories/java/">Java</a>
+      
+    
+      
+    
+  
+
+
+ •
+  
+    
+    
+      
+        <a href="/tags/java/">Java</a>
+      
+    
+      
+    
+      
+    
+      
+    
+  
+
+</p>
+  </header>
+
+  <div class="post-content" itemprop="articleBody">
+    <p>偶然看到<code class="highlighter-rouge">import static</code>，感觉很新奇，以前没用过，所以整理了一下关于静态导入的使用方式和注意事项</p>
+
+<!-- more -->
+
+<h1 id="意义">意义</h1>
+
+<p><code class="highlighter-rouge">import static</code>静态导入是<code class="highlighter-rouge">JDK 1.5</code>增加的特性，有两种使用方式</p>
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">static</span> <span class="n">java</span><span class="o">.</span><span class="na">lang</span><span class="o">.</span><span class="na">Integer</span><span class="o">.*;</span>
+<span class="err">或者</span>
+<span class="kn">import</span> <span class="nn">static</span> <span class="n">java</span><span class="o">.</span><span class="na">lang</span><span class="o">.</span><span class="na">Integer</span><span class="o">.</span><span class="na">MAX_VALUE</span><span class="o">;</span>
+</code></pre></div></div>
+
+<p>解释</p>
+<ul>
+  <li>用<code class="highlighter-rouge">.*</code>时，表示导入类中的所有静态属性和方法</li>
+  <li>用静态方法名时，表示只导入该静态属性或方法</li>
+</ul>
+
+<p>静态导入之后就可以直接用名称访问静态属性和方法，而不必用<code class="highlighter-rouge">ClassName.methodName()</code>的方式来访问</p>
+
+<p>其目的是为了减少字符输入量，提高代码的可阅读性，以便更好地理解程序。但是，滥用静态导入会使程序更难阅读，更难维护</p>
+
+<h1 id="使用">使用</h1>
+
+<h2 id="正确使用">正确使用</h2>
+
+<p>当程序中需要经常使用某个静态方法时，可以使用静态导入，用于减少字符输入量和提高程序可读性。比如封装一下常用的<code class="highlighter-rouge">System.out.println()</code>，就可以直接使用<code class="highlighter-rouge">println()</code>了</p>
+
+<p>使用静态方法封装目标方法</p>
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">package</span> <span class="n">com</span><span class="o">.</span><span class="na">demo</span><span class="o">.</span><span class="na">importstatic</span>
+
+<span class="kd">public</span> <span class="kd">class</span> <span class="nc">Utils</span> <span class="o">{</span>
+    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">println</span><span class="o">(</span><span class="nc">String</span> <span class="n">x</span><span class="o">)</span> <span class="o">{</span>
+        <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">x</span><span class="o">);</span>
+    <span class="o">}</span>
+<span class="o">}</span>
+</code></pre></div></div>
+
+<p>静态导入</p>
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">package</span> <span class="n">com</span><span class="o">.</span><span class="na">demo</span><span class="o">.</span><span class="na">importstatic</span>
+
+<span class="kn">import</span> <span class="nn">static</span> <span class="n">com</span><span class="o">.</span><span class="na">demo</span><span class="o">.</span><span class="na">importstatic</span><span class="o">.</span><span class="na">Utils</span><span class="o">.</span><span class="na">println</span><span class="o">;</span>
+
+<span class="kd">public</span> <span class="kd">class</span> <span class="nc">Test</span> <span class="o">{</span>
+    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="nc">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="o">{</span>
+        <span class="n">println</span><span class="o">(</span><span class="s">"a test string"</span><span class="o">);</span>
+    <span class="o">}</span>
+<span class="o">}</span>
+</code></pre></div></div>
+
+<h2 id="错误使用">错误使用</h2>
+
+<p>如果用<code class="highlighter-rouge">.*</code>方式导入多个类的静态方法，就会使代码可读性降低，分不清静态方法到底属于哪个类，也不清楚所使用的静态方法的意义。比如</p>
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">static</span> <span class="n">java</span><span class="o">.</span><span class="na">lang</span><span class="o">.</span><span class="na">Double</span><span class="o">.*;</span> 
+<span class="kn">import</span> <span class="nn">static</span> <span class="n">java</span><span class="o">.</span><span class="na">lang</span><span class="o">.</span><span class="na">Math</span><span class="o">.*;</span> 
+<span class="kn">import</span> <span class="nn">static</span> <span class="n">java</span><span class="o">.</span><span class="na">lang</span><span class="o">.</span><span class="na">Integer</span><span class="o">.*;</span> 
+</code></pre></div></div>
+
+<p>静态导入这些类的静态属性和方法之后，当调用<code class="highlighter-rouge">MAX_VALUE</code>时，就不知道到底调用的哪个类的属性，编辑器这时候就会报错</p>
+
+<h1 id="总结">总结</h1>
+
+<p>对于静态导入，一定要遵循两个规则</p>
+<ol>
+  <li>不要使用<code class="highlighter-rouge">.*</code>方式，除非是导入静态常量（只包含常量的类或接口）</li>
+  <li>方法名具有明确、清晰的表象意义</li>
+</ol>
+
+<h1 id="参考">参考</h1>
+
+<ul>
+  <li><a href="http://webcache.googleusercontent.com/search?q=cache:http://864343928.iteye.com/blog/2093663">java 静态导入 import static和import的区别</a></li>
+  <li><a href="https://blog.csdn.net/p106786860/article/details/9297783">Java提高：静态导入给你带来的麻烦</a></li>
+</ul>
+
+  </div>
+
+  
+
+</article>
+
+      </div>
+    </main>
+
+    <footer class="site-footer">
+
+  <div class="wrapper">
+
+    <p>
+      
+
+&copy; Widiot - Powered by <a href="https://jekyllrb.com">Jekyll</a> &amp; <a href="https://github.com/yous/whiteglass">whiteglass</a> - Subscribe via <a href="http://localhost:4000/feed.xml">RSS</a>
+
+    </p>
+
+  </div>
+
+</footer>
+
+
+  </body>
+
+</html>

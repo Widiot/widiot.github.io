@@ -1,0 +1,522 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="zh">
+  <generator uri="http://jekyllrb.com" version="3.8.1">Jekyll</generator>
+  
+  
+  <link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" />
+  <link href="http://localhost:4000/" rel="alternate" type="text/html" hreflang="zh" />
+  <updated>2019-10-10T22:55:06+08:00</updated>
+  <id>http://localhost:4000//</id>
+
+  
+    <title type="html">Widiot’s Blog</title>
+  
+
+  
+    <subtitle>Learning and working</subtitle>
+  
+
+  
+    <author>
+        <name>Widiot</name>
+      
+      
+    </author>
+  
+
+  
+  
+    <entry>
+      
+      <title type="html">Ubuntu18.04美化</title>
+      
+      
+      <link href="http://localhost:4000/2019/10/06/ubuntu1804-beautify/" rel="alternate" type="text/html" title="Ubuntu18.04美化" />
+      
+      <published>2019-10-06T00:00:00+08:00</published>
+      <updated>2019-10-06T00:00:00+08:00</updated>
+      <id>http://localhost:4000/2019/10/06/ubuntu1804-beautify</id>
+      <content type="html" xml:base="http://localhost:4000/2019/10/06/ubuntu1804-beautify/">&lt;p&gt;Ubuntu18.04使用GNOME取代了Unity，这里记录一下主题、终端、登陆、开机的美化过程&lt;/p&gt;
+
+&lt;!-- more --&gt;
+
+&lt;h1 id=&quot;效果展示&quot;&gt;效果展示&lt;/h1&gt;
+
+&lt;p&gt;桌面
+&lt;img src=&quot;https://img-blog.csdnimg.cn/20190331145006906.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1doaXRlX0lkaW90,size_16,color_FFFFFF,t_70&quot; alt=&quot;桌面&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;应用程序
+&lt;img src=&quot;https://img-blog.csdnimg.cn/20190331145106482.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1doaXRlX0lkaW90,size_16,color_FFFFFF,t_70&quot; alt=&quot;应用程序&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;文件夹
+&lt;img src=&quot;https://img-blog.csdnimg.cn/20190331145147903.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1doaXRlX0lkaW90,size_16,color_FFFFFF,t_70&quot; alt=&quot;文件夹&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;终端
+&lt;img src=&quot;https://img-blog.csdnimg.cn/2019033114545896.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1doaXRlX0lkaW90,size_16,color_FFFFFF,t_70&quot; alt=&quot;终端&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;锁屏和登陆界面不方便截图，所以用的官方示例图
+&lt;img src=&quot;https://img-blog.csdnimg.cn/20190331150125594.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1doaXRlX0lkaW90,size_16,color_FFFFFF,t_70&quot; alt=&quot;锁屏&quot; /&gt;
+&lt;img src=&quot;https://img-blog.csdnimg.cn/20190331150133428.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1doaXRlX0lkaW90,size_16,color_FFFFFF,t_70&quot; alt=&quot;登陆界面&quot; /&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;安装gnome-tweaks&quot;&gt;安装GNOME Tweaks&lt;/h1&gt;
+
+&lt;p&gt;安装GNOME Tweaks主题美化工具&lt;/p&gt;
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;apt-get &lt;span class=&quot;nb&quot;&gt;install &lt;/span&gt;gnome-tweak-tool
+&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;apt-get &lt;span class=&quot;nb&quot;&gt;install &lt;/span&gt;gnome-shell-extensions
+&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;apt-get &lt;span class=&quot;nb&quot;&gt;install  &lt;/span&gt;gnome-shell-extension-dashtodock
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;打开tweak，选择扩展，打开User themes选项
+&lt;img src=&quot;https://img-blog.csdnimg.cn/20190331155100564.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1doaXRlX0lkaW90,size_16,color_FFFFFF,t_70&quot; alt=&quot;tweak&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;然后选择外观，如果shell上有感叹号，关闭tweak，按Alt+F2，输入r，执行后重新打开tweak就没有感叹号了&lt;/p&gt;
+
+&lt;h1 id=&quot;配置主题和图标&quot;&gt;配置主题和图标&lt;/h1&gt;
+
+&lt;p&gt;下载&lt;a href=&quot;https://www.gnome-look.org/s/Gnome/p/1013714/&quot;&gt;macOS High Sierra&lt;/a&gt;主题，选择Files下载其中一个主题以及图标。解压之后，把主题放到&lt;code class=&quot;highlighter-rouge&quot;&gt;/usr/share/themes/&lt;/code&gt;下，图标放到&lt;code class=&quot;highlighter-rouge&quot;&gt;/usr/share/icons/&lt;/code&gt;下。我选择的主题和图标如下
+&lt;img src=&quot;https://img-blog.csdnimg.cn/20190331161201775.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1doaXRlX0lkaW90,size_16,color_FFFFFF,t_70&quot; alt=&quot;下载主题和图标&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;然后打开tweak，设置外观如下
+&lt;img src=&quot;https://img-blog.csdnimg.cn/20190331161534859.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1doaXRlX0lkaW90,size_16,color_FFFFFF,t_70&quot; alt=&quot;设置外观&quot; /&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;设置dock&quot;&gt;设置Dock&lt;/h1&gt;
+
+&lt;p&gt;打开tweak，选择扩展，打开Dash to dock，然后点击设置
+&lt;img src=&quot;https://img-blog.csdnimg.cn/20190331161935618.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1doaXRlX0lkaW90,size_16,color_FFFFFF,t_70&quot; alt=&quot;打开Dash to dock&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;这里可以按自己的喜好设置Dock
+&lt;img src=&quot;https://img-blog.csdnimg.cn/20190331162146689.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1doaXRlX0lkaW90,size_16,color_FFFFFF,t_70&quot; alt=&quot;设置Dock&quot; /&gt;
+&lt;img src=&quot;https://img-blog.csdnimg.cn/20190331162205229.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1doaXRlX0lkaW90,size_16,color_FFFFFF,t_70&quot; alt=&quot;设置Dock&quot; /&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;设置开机动画&quot;&gt;设置开机动画&lt;/h1&gt;
+
+&lt;p&gt;下载&lt;a href=&quot;https://www.opendesktop.org/p/1154790/&quot;&gt;Ubuntu Paw Plymouth&lt;/a&gt;主题，解压缩放在/usr/share/plymouth/themes/下&lt;/p&gt;
+
+&lt;p&gt;然后备份并编辑文件&lt;/p&gt;
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;sudo cp&lt;/span&gt; /etc/alternatives/default.plymouth /etc/alternatives/default.plymouth.bak
+&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;vim /etc/alternatives/default.plymouth
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;最后两行修改为新的主题路径&lt;/p&gt;
+&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;Plymouth Theme]
+&lt;span class=&quot;nv&quot;&gt;Name&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;Ubuntu Logo
+&lt;span class=&quot;nv&quot;&gt;Description&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;A theme that features a blank background with a logo.
+&lt;span class=&quot;nv&quot;&gt;ModuleName&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;script
+
+&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;script]
+&lt;span class=&quot;nv&quot;&gt;ImageDir&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;/usr/share/plymouth/themes/Ubuntu-Paw
+&lt;span class=&quot;nv&quot;&gt;ScriptFile&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;/usr/share/plymouth/themes/Ubuntu-Paw/ubuntu-paw.script
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h1 id=&quot;设置登陆界面&quot;&gt;设置登陆界面&lt;/h1&gt;
+
+&lt;p&gt;下载&lt;a href=&quot;https://www.opendesktop.org/s/Gnome/p/1207015/&quot;&gt;High Ubunterra &lt;/a&gt;主题，选择Files下载其中一个主题（根据其产品描述，带CC后缀的只能用于Ubuntu 18.10，我开始没注意，下载了带CC后缀的，结果安装不了），我选择的如下
+&lt;img src=&quot;https://img-blog.csdnimg.cn/20190331163728236.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1doaXRlX0lkaW90,size_16,color_FFFFFF,t_70&quot; alt=&quot;下载登陆界面主题&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;解压缩在终端运行&lt;/p&gt;
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;sudo chmod&lt;/span&gt; +x install.sh
+./install.sh
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;更换锁屏壁纸只需要选择一张图片右键，然后在脚本中选择SetAsWallpaper&lt;/p&gt;
+
+&lt;h1 id=&quot;设置终端&quot;&gt;设置终端&lt;/h1&gt;
+
+&lt;p&gt;Zsh是替代Bash的终端，还可以设置多种主题，在终端中安装&lt;/p&gt;
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;apt-get &lt;span class=&quot;nb&quot;&gt;install &lt;/span&gt;zsh
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;然后用Oh My Zsh美化Zsh终端&lt;/p&gt;
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sh &lt;span class=&quot;nt&quot;&gt;-c&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;$(&lt;/span&gt;curl &lt;span class=&quot;nt&quot;&gt;-fsSL&lt;/span&gt; https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh&lt;span class=&quot;si&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;最后用Zsh替换Bash&lt;/p&gt;
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;chsh &lt;span class=&quot;nt&quot;&gt;-s&lt;/span&gt; &lt;span class=&quot;sb&quot;&gt;`&lt;/span&gt;which zsh&lt;span class=&quot;sb&quot;&gt;`&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;其他的更改可以直接右键终端，选择配置文件首选项进行设置
+&lt;img src=&quot;https://img-blog.csdnimg.cn/20190331165313337.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1doaXRlX0lkaW90,size_16,color_FFFFFF,t_70&quot; alt=&quot;终端设置&quot; /&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;参考&quot;&gt;参考&lt;/h1&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.jianshu.com/p/6ef16e3b0a3e&quot;&gt;Ubuntu18.04美化总结&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://blog.csdn.net/lishanleilixin/article/details/80453565&quot;&gt;Ubuntu18.04美化主题(mac主题)&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content>
+
+      
+      
+      
+      
+      
+
+      
+        <author>
+            <name>Widiot</name>
+          
+          
+        </author>
+      
+
+      
+        <category term="OS" />
+      
+
+      
+        <category term="Ubuntu" />
+      
+
+      
+        <summary type="html">Ubuntu18.04使用GNOME取代了Unity，这里记录一下主题、终端、登陆、开机的美化过程</summary>
+      
+
+      
+      
+    </entry>
+  
+  
+  
+    <entry>
+      
+      <title type="html">静态导入import static</title>
+      
+      
+      <link href="http://localhost:4000/2019/10/06/import-static/" rel="alternate" type="text/html" title="静态导入import static" />
+      
+      <published>2019-10-06T00:00:00+08:00</published>
+      <updated>2019-10-06T00:00:00+08:00</updated>
+      <id>http://localhost:4000/2019/10/06/import-static</id>
+      <content type="html" xml:base="http://localhost:4000/2019/10/06/import-static/">&lt;p&gt;偶然看到&lt;code class=&quot;highlighter-rouge&quot;&gt;import static&lt;/code&gt;，感觉很新奇，以前没用过，所以整理了一下关于静态导入的使用方式和注意事项&lt;/p&gt;
+
+&lt;!-- more --&gt;
+
+&lt;h1 id=&quot;意义&quot;&gt;意义&lt;/h1&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;import static&lt;/code&gt;静态导入是&lt;code class=&quot;highlighter-rouge&quot;&gt;JDK 1.5&lt;/code&gt;增加的特性，有两种使用方式&lt;/p&gt;
+&lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;static&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;java&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;lang&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;Integer&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.*;&lt;/span&gt;
+&lt;span class=&quot;err&quot;&gt;或者&lt;/span&gt;
+&lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;static&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;java&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;lang&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;Integer&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;MAX_VALUE&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;解释&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;用&lt;code class=&quot;highlighter-rouge&quot;&gt;.*&lt;/code&gt;时，表示导入类中的所有静态属性和方法&lt;/li&gt;
+  &lt;li&gt;用静态方法名时，表示只导入该静态属性或方法&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;静态导入之后就可以直接用名称访问静态属性和方法，而不必用&lt;code class=&quot;highlighter-rouge&quot;&gt;ClassName.methodName()&lt;/code&gt;的方式来访问&lt;/p&gt;
+
+&lt;p&gt;其目的是为了减少字符输入量，提高代码的可阅读性，以便更好地理解程序。但是，滥用静态导入会使程序更难阅读，更难维护&lt;/p&gt;
+
+&lt;h1 id=&quot;使用&quot;&gt;使用&lt;/h1&gt;
+
+&lt;h2 id=&quot;正确使用&quot;&gt;正确使用&lt;/h2&gt;
+
+&lt;p&gt;当程序中需要经常使用某个静态方法时，可以使用静态导入，用于减少字符输入量和提高程序可读性。比如封装一下常用的&lt;code class=&quot;highlighter-rouge&quot;&gt;System.out.println()&lt;/code&gt;，就可以直接使用&lt;code class=&quot;highlighter-rouge&quot;&gt;println()&lt;/code&gt;了&lt;/p&gt;
+
+&lt;p&gt;使用静态方法封装目标方法&lt;/p&gt;
+&lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kn&quot;&gt;package&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;com&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;demo&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;importstatic&lt;/span&gt;
+
+&lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Utils&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;static&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;println&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;String&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;nc&quot;&gt;System&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;out&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;println&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+    &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;静态导入&lt;/p&gt;
+&lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kn&quot;&gt;package&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;com&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;demo&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;importstatic&lt;/span&gt;
+
+&lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;static&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;com&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;demo&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;importstatic&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;Utils&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;println&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+
+&lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Test&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;static&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;String&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[]&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;args&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;n&quot;&gt;println&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;a test string&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+    &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;错误使用&quot;&gt;错误使用&lt;/h2&gt;
+
+&lt;p&gt;如果用&lt;code class=&quot;highlighter-rouge&quot;&gt;.*&lt;/code&gt;方式导入多个类的静态方法，就会使代码可读性降低，分不清静态方法到底属于哪个类，也不清楚所使用的静态方法的意义。比如&lt;/p&gt;
+&lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;static&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;java&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;lang&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;Double&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.*;&lt;/span&gt; 
+&lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;static&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;java&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;lang&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;Math&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.*;&lt;/span&gt; 
+&lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;static&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;java&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;lang&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;Integer&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.*;&lt;/span&gt; 
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;静态导入这些类的静态属性和方法之后，当调用&lt;code class=&quot;highlighter-rouge&quot;&gt;MAX_VALUE&lt;/code&gt;时，就不知道到底调用的哪个类的属性，编辑器这时候就会报错&lt;/p&gt;
+
+&lt;h1 id=&quot;总结&quot;&gt;总结&lt;/h1&gt;
+
+&lt;p&gt;对于静态导入，一定要遵循两个规则&lt;/p&gt;
+&lt;ol&gt;
+  &lt;li&gt;不要使用&lt;code class=&quot;highlighter-rouge&quot;&gt;.*&lt;/code&gt;方式，除非是导入静态常量（只包含常量的类或接口）&lt;/li&gt;
+  &lt;li&gt;方法名具有明确、清晰的表象意义&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h1 id=&quot;参考&quot;&gt;参考&lt;/h1&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;http://webcache.googleusercontent.com/search?q=cache:http://864343928.iteye.com/blog/2093663&quot;&gt;java 静态导入 import static和import的区别&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://blog.csdn.net/p106786860/article/details/9297783&quot;&gt;Java提高：静态导入给你带来的麻烦&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content>
+
+      
+      
+      
+      
+      
+
+      
+        <author>
+            <name>Widiot</name>
+          
+          
+        </author>
+      
+
+      
+        <category term="Java" />
+      
+
+      
+        <category term="Java" />
+      
+
+      
+        <summary type="html">偶然看到import static，感觉很新奇，以前没用过，所以整理了一下关于静态导入的使用方式和注意事项</summary>
+      
+
+      
+      
+    </entry>
+  
+  
+  
+    <entry>
+      
+      <title type="html">equals()和hashCode()同时重写？</title>
+      
+      
+      <link href="http://localhost:4000/2019/10/06/equals-hashcode-override/" rel="alternate" type="text/html" title="equals()和hashCode()同时重写？" />
+      
+      <published>2019-10-06T00:00:00+08:00</published>
+      <updated>2019-10-06T00:00:00+08:00</updated>
+      <id>http://localhost:4000/2019/10/06/equals-hashcode-override</id>
+      <content type="html" xml:base="http://localhost:4000/2019/10/06/equals-hashcode-override/">&lt;p&gt;Java编码规范中，通常会要求同时重写equals()和hashCode()，具体原因却从来不清楚，并且重写时应该按照何种原则或规范也不知道。因此探究了一下Object和String的源码，总结了重写时的规范和步骤&lt;/p&gt;
+
+&lt;!-- more --&gt;
+
+&lt;h1 id=&quot;equals&quot;&gt;equals()&lt;/h1&gt;
+
+&lt;p&gt;首先看下Object中的equals()，仅简单的用&lt;code class=&quot;highlighter-rouge&quot;&gt;==&lt;/code&gt;比较两个对象&lt;/p&gt;
+&lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;boolean&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;equals&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;Object&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;obj&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;this&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;obj&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;源码中对equals()的注释如下&lt;/p&gt;
+&lt;div class=&quot;language-text highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;Indicates(指出) whether some other object is &quot;equal to&quot; this one.
+
+The equals method implements an equivalence(等价) relation on non-null
+object references:
+
+    1. It is reflexive(自反的): for any non-null reference value
+    x, x.equals(x) should return true.
+    
+    2. It is symmetric(对称的): for any non-null reference values
+    x and y, x.equals(y) should return true if and only if
+
+    3. It is transitive(传递的): for any non-null reference values
+    x, y, and z, if x.equals(y) returns true and y.equals(z) returns
+    true, then x.equals(z) should return true.
+    
+    4. It is consistent(一致的): for any non-null reference values x and
+    y, multiple invocations of x.equals(y) consistently(始终) return true
+    or consistently return false, provided no information used in equals
+    comparisons on the objects is modified.
+
+    5. For any non-null reference value x, x.equals(null) should return false.
+
+The equals method for class Object implements the most discriminating(判别)
+possible equivalence relation on objects; that is, for any non-null reference
+values x and y, this method returns true if and only if x and y refer to
+the same object (x == y has the value true).
+
+Note that it is generally necessary to override the hashCode method whenever
+this method is overridden, so as to maintain the general contract for the
+hashCode method, which states that equal objects must have equal hash codes.
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;在注释中主要描述了equals()应该具有的一些特点，或者说是重写equals()时应当遵守的规范&lt;/p&gt;
+&lt;ol&gt;
+  &lt;li&gt;自反性：x = x&lt;/li&gt;
+  &lt;li&gt;对称性：x = y =&amp;gt; y = x&lt;/li&gt;
+  &lt;li&gt;传递性：x = y, y = z =&amp;gt; x = z&lt;/li&gt;
+  &lt;li&gt;一致性：只要没有修改用于比较的信息，x.equals(y)总是返回一致的结果&lt;/li&gt;
+  &lt;li&gt;非空性：对于任何非null的对象，x.equals(null)总是返回false&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;对于equals()的重写，可以参考String的做法&lt;/p&gt;
+&lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;boolean&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;equals&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;Object&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;anObject&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;c1&quot;&gt;// 若指向同一个内存地址，即为同一个String实例，返回true&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;this&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;anObject&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;kc&quot;&gt;true&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+
+    &lt;span class=&quot;c1&quot;&gt;// 如果对象不是String实例，返回false&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;anObject&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;instanceof&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;String&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;nc&quot;&gt;String&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;anotherString&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;String&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;anObject&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+        &lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;n&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;value&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;length&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+        &lt;span class=&quot;c1&quot;&gt;// 如果value长度不一样，返回false&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;n&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;anotherString&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;value&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;length&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+            &lt;span class=&quot;kt&quot;&gt;char&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;v1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;value&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+            &lt;span class=&quot;kt&quot;&gt;char&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;v2&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;anotherString&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;value&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+            &lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;i&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+            &lt;span class=&quot;c1&quot;&gt;// 逐个字符比较，若有不相等字符返回false&lt;/span&gt;
+            &lt;span class=&quot;k&quot;&gt;while&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;n&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;--&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;!=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+                &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;v1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;!=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;v2&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;])&lt;/span&gt;
+                    &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;kc&quot;&gt;false&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+                &lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;++;&lt;/span&gt;
+            &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+            &lt;span class=&quot;c1&quot;&gt;// 所有字符都相同，返回true&lt;/span&gt;
+            &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;kc&quot;&gt;true&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+        &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+    &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;kc&quot;&gt;false&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;可以从String的equals()方法中总结出覆盖equals()方法的一般形式&lt;/p&gt;
+&lt;ol&gt;
+  &lt;li&gt;使用==检查是否指向同一内存地址，如果是则返回true（这是一种性能优化，如果比较操作有可能很昂贵，就值得这么做）&lt;/li&gt;
+  &lt;li&gt;使用instanceof检查对象是否是“正确类型”，如果不是则返回false（一般来说，“正确类型”是指equals()方法所在的类）&lt;/li&gt;
+  &lt;li&gt;把参数转换成正确的类型（因为转换之前进行过instanceof测试，所以确保会成功）&lt;/li&gt;
+  &lt;li&gt;检查对象中的“关键”域是否对应“相等”。如果这些测试全部成功则返回true，否则返回false&lt;/li&gt;
+  &lt;li&gt;当重写equals()方法后，检查是否符合上述Object.equals()规范&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h1 id=&quot;hashcode&quot;&gt;hashCode()&lt;/h1&gt;
+
+&lt;p&gt;Object中的hashCode()是一个native函数，返回值是int类型&lt;/p&gt;
+&lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;native&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;hashCode&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;();&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;源码中对hashCode()的注释如下&lt;/p&gt;
+&lt;div class=&quot;language-text highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;Returns a hash code value for the object. This method is supported for the
+benefit of hash tables such as(诸如) those provided by java.util.HashMap.
+
+The general contract of hashCode is:
+
+    1. Whenever it is invoked on the same object more than once during
+    an execution of a Java application, the hashCode method must
+    consistently(总是) return the same integer, provided no information
+    used in equals comparisons on the object is modified. This integer need
+    not remain consistent from one execution of an application to another
+    execution of the same application.
+
+    2. If two objects are equal according to the equals(Object) method, then
+    calling the hashCode method on each of the two objects must produce the
+    same integer result.
+
+    3. It is not required that if two objects are unequal according to the
+    java.lang.Object#equals(java.lang.Object) method, then calling the
+    hashCode method on each of the two objects must produce distinct(不同)
+    integer results.  However, the programmer should be aware(意识到) that
+    producing distinct integer results for unequal objects may improve the
+    performance of hash tables.
+
+As much as is reasonably practical, the hashCode method defined by class
+Object does return distinct integers for distinct objects. (This is typically
+implemented by converting the internal address of the object into an integer,
+but this implementation technique is not required by the Java&amp;amp;trade;
+programming language.)
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;注释中主要描述的也是对重写hashCode()时应当遵守的规范&lt;/p&gt;
+&lt;ol&gt;
+  &lt;li&gt;在程序的一次运行中，只要没有修改equals()中用于比较的信息，x.hashCode()总是返回一致的hash值&lt;/li&gt;
+  &lt;li&gt;如果x.equals(y)返回true，则x和y具有相等的hash值&lt;/li&gt;
+  &lt;li&gt;如果x和y具有相等的hash值，x.equals(y)并不一定返回true&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;比较重要的一点是“x.equals(y)返回true”是“x和y具有相同的hash值”的充分不必要条件，因为hashCode()无法避免hash碰撞，所以即使不同的两个对象也可能产生相同的hash值&lt;/p&gt;
+
+&lt;p&gt;通常需要一些方法解决hash碰撞&lt;/p&gt;
+&lt;ol&gt;
+  &lt;li&gt;开放定址法：Hi(k) = (H(k) + di) % m, (i = 1, 2, …, k(k &amp;lt;= m-1))&lt;/li&gt;
+  &lt;li&gt;再哈希法：出现碰撞时，依次使用H1(k), H2(k), …, Hi(k), (i = 1, 2, …)计算hash值&lt;/li&gt;
+  &lt;li&gt;链地址法：把所有hash值为i的元素构成一个称为同义词链的链表，并将头指针放在第i个单元&lt;/li&gt;
+  &lt;li&gt;公共溢出区：如果Hash函数值域为[0,m-1]，则令HashTable[0..m-1]为基本表，另外设立溢出表OverTable[0..v]存储产生碰撞的记录&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;对于hashCode()的重写，可以参考String的做法&lt;/p&gt;
+&lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;hashCode&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;h&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;hash&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;h&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;amp;&amp;amp;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;value&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;length&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;kt&quot;&gt;char&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;val&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;value&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;i&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;i&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;value&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;length&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;++)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+            &lt;span class=&quot;n&quot;&gt;h&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;31&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;h&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;val&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;];&lt;/span&gt;
+        &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+        &lt;span class=&quot;n&quot;&gt;hash&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;h&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;h&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;实现的计算表达式如下所示（s[i]是字符串的第i个字符，n是字符串的长度，^表示求幂。空字符串的hash值是0）&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;s[0]*31^(n-1) + s[1]*31^(n-2) + ... + s[n-1]
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Java源码中许多地方都使用31作为计算hash值的乘子，对于乘子31的选择，主要有两点原因&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;31是一个不大不小的质数，是作为hashCode()乘子的优选质数之一，可以均匀分布hash值并减少信息丢失&lt;/li&gt;
+  &lt;li&gt;31可以被JVM优化，31 * i = (i « 5) - i&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;String的hashCode()方法就是根据value生成hash值，这样不同value的字符串就容易生成不同的hash值，既能减少碰撞又能生成与内容相关的hash值，这样就能实现上述Object.hashCode()规范&lt;/p&gt;
+
+&lt;h1 id=&quot;同时重写&quot;&gt;同时重写？&lt;/h1&gt;
+
+&lt;p&gt;hashCode()方法主要用于hash表，比如HashMap，当集合要添加元素时，大致按如下步骤&lt;/p&gt;
+&lt;ol&gt;
+  &lt;li&gt;先调用该元素的hashCode()方法，直接定位到它应该放置的物理位置上&lt;/li&gt;
+  &lt;li&gt;如果这个位置上没有元素，就直接存储在这个位置上&lt;/li&gt;
+  &lt;li&gt;如果这个位置上已经有元素，就调用equals()方法进行比较，相同的话就更新，不相同就使用上述解决碰撞的方法存储新元素&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;所以重写equals()方法时，也必须重写hashCode()方法。如果不这样做，就会违反Object.hashCode()的规范，导致无法结合所有基于hash的集合一起正常运作，这样的集合包括HashMap、HashSet和Hashtable&lt;/p&gt;
+
+&lt;p&gt;那为什么不直接使用equals()进行操作呢？如果只使用equals()，意味着需要迭代整个集合进行比较操作，如果集合中有1万个元素，就需要进行1万次比较，这明显不可行&lt;/p&gt;</content>
+
+      
+      
+      
+      
+      
+
+      
+        <author>
+            <name>Widiot</name>
+          
+          
+        </author>
+      
+
+      
+        <category term="Java" />
+      
+
+      
+        <category term="Java" />
+      
+
+      
+        <summary type="html">Java编码规范中，通常会要求同时重写equals()和hashCode()，具体原因却从来不清楚，并且重写时应该按照何种原则或规范也不知道。因此探究了一下Object和String的源码，总结了重写时的规范和步骤</summary>
+      
+
+      
+      
+    </entry>
+  
+  
+</feed>
