@@ -1,6 +1,6 @@
 // Define defaults for each variable.
-$base-font-family: Noto Sans SC, Roboto, Bitter, "Apple SD Gothic Neo", "Noto Sans", "Source Han Sans", "Noto Sans CJK JP", "Source Han Sans JP", "Noto Sans CJK KR", "Source Han Sans KR", NanumBarunGothic, AppleGothic, "Malgun Gothic", Dotum, sans-serif !default;
-$monospace-font-family: Roboto Mono, Monaco, Menlo, Consolas, "Courier New", DotumChe, monospace !default;
+$base-font-family: Noto Sans SC, Roboto !default;
+$monospace-font-family: Roboto Mono !default;
 $base-font-size:   16px !default;
 $base-font-weight: 400 !default;
 $small-font-size:  $base-font-size * 0.875 !default;
