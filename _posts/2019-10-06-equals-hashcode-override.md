@@ -4,6 +4,7 @@ layout: post
 tags:
   - Java
 category: Java
+lang: zh
 ---
 
 Java编码规范中，通常会要求同时重写equals()和hashCode()，具体原因却从来不清楚，并且重写时应该按照何种原则或规范也不知道。因此探究了一下Object和String的源码，总结了重写时的规范和步骤

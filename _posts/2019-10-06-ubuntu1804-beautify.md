@@ -4,6 +4,7 @@ layout: post
 tags:
   - Ubuntu
 category: OS
+lang: zh
 ---
 
 Ubuntu18.04使用GNOME取代了Unity，这里记录一下主题、终端、登陆、开机的美化过程

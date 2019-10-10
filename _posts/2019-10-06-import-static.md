@@ -4,6 +4,7 @@ layout: post
 tags:
   - Java
 category: Java
+lang: zh
 ---
 
 偶然看到import static，感觉很新奇，以前没用过，所以整理了一下关于静态导入的使用方式和注意事项
